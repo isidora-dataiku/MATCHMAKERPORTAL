@@ -1,0 +1,40 @@
+{
+  "filter": {
+    "uiData": {
+      "mode": "\u0026\u0026",
+      "conditions": []
+    },
+    "distinct": false,
+    "enabled": false
+  },
+  "rawQueryOutputMode": "RAW_WITHOUT_FULL_IMAGES",
+  "completionSettings": {
+    "stopSequences": []
+  },
+  "rawResponseOutputMode": "RAW_WITHOUT_TRACES",
+  "llmId": "agent:qTCpk4bs",
+  "prompt": {
+    "guardrailsPipelineSettings": {
+      "guardrails": []
+    },
+    "promptTemplateInputs": [
+      {
+        "datasetColumnName": "candidate_id",
+        "name": "",
+        "type": "TEXT"
+      }
+    ],
+    "resultValidation": {
+      "requiredJSONObjectKeys": [],
+      "expectedFormat": "NONE",
+      "forbiddenTerms": []
+    },
+    "promptTemplateQueriesSource": "DATASET",
+    "streamingDisabled": false,
+    "chatMessages": {},
+    "structuredPromptExamples": [],
+    "textPromptTemplateInputs": [],
+    "promptMode": "PROMPT_TEMPLATE_STRUCTURED"
+  },
+  "performFiltering": false
+}

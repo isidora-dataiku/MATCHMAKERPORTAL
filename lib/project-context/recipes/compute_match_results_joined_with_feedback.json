@@ -1,0 +1,49 @@
+{
+  "type": "join",
+  "neverRecomputeExistingPartitions": false,
+  "customMeta": {
+    "kv": {}
+  },
+  "redispatchPartitioning": false,
+  "maxRunningActivities": 0,
+  "hashPropagationBehavior": "INHERIT",
+  "variables": {},
+  "dkuProperties": [],
+  "inputs": {
+    "main": {
+      "items": [
+        {
+          "ref": "match_results",
+          "deps": []
+        },
+        {
+          "ref": "advisor_feedback",
+          "deps": []
+        }
+      ]
+    }
+  },
+  "outputs": {
+    "main": {
+      "items": [
+        {
+          "ref": "match_results_joined_with_feedback",
+          "appendMode": false
+        }
+      ]
+    }
+  },
+  "labels": [],
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "isidora.stojanac@dataiku.com"
+    },
+    "lastModifiedOn": 1776804834528
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}

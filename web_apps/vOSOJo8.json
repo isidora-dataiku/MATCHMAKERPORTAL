@@ -1,0 +1,69 @@
+{
+  "type": "STANDARD",
+  "hasLegacyBackendURL": false,
+  "params": {
+    "backendEnabled": true,
+    "enableJavascriptModules": false,
+    "autoStartBackend": true,
+    "hideJSSecurityPanel": false,
+    "hideWebAppConfig": false,
+    "envSelection": {
+      "envMode": "EXPLICIT_ENV",
+      "envName": "flask"
+    },
+    "nbProcesses": 1,
+    "backendAPIAccessEnabled": true,
+    "backendFramework": "FLASK",
+    "libraries": [
+      "jquery",
+      "dataiku"
+    ],
+    "runAs": "isidora.stojanac@dataiku.com",
+    "infra": {
+      "containerSelection": {
+        "containerMode": "NONE"
+      },
+      "overrideGlobalK8sExposition": false,
+      "exposition": {
+        "type": "local_process",
+        "params": {}
+      },
+      "scaling": {
+        "initialReplicas": 1,
+        "progressDeadlineSeconds": 600,
+        "hpa": false,
+        "hpaTargetCPUPercent": 0,
+        "hpaTargetMemoryPercent": 0,
+        "hpaMetrics": [],
+        "hpaMinPods": 0,
+        "hpaMaxPods": 0,
+        "hpaAnnotations": []
+      },
+      "podDisruptionBudget": {
+        "enable": false,
+        "isMaxUnavailable": false,
+        "minAvailable": "50%"
+      },
+      "deploymentModifier": {
+        "config": {}
+      }
+    },
+    "forceAuthentication": false
+  },
+  "config": {},
+  "name": "advisor_copilot",
+  "apiKey": "e:AES:X2:p7MYrC0gmHQ6MK9lnWAmmvrtUE2PX+Dr+bYZ53m6fvJw8DNLBVIDUdnALYSlZmCBMa4V4Kg4RaWUGBs0Q0L0iAGZGnEGfPGOgIQw4pBONnm9xuBvMY4I",
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "isidora.stojanac@dataiku.com"
+    },
+    "lastModifiedOn": 1776712445513
+  },
+  "tags": [],
+  "checklists": {
+    "checklists": []
+  },
+  "customFields": {},
+  "isVirtual": false
+}

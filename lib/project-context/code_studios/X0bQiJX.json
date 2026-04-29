@@ -1,0 +1,19 @@
+{
+  "name": "VSCode",
+  "libName": "VSCode",
+  "templateId": "vscode-advanced",
+  "params": {},
+  "owner": "isidora.stojanac@dataiku.com",
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "isidora.stojanac@dataiku.com"
+    },
+    "lastModifiedOn": 1776836229005
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}

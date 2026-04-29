@@ -1,0 +1,106 @@
+{
+  "name": "search_jobs_mass",
+  "type": "VectorStoreSearch",
+  "params": {
+    "includeMultimodalContent": false,
+    "enforceDocumentLevelSecurity": false,
+    "performFiltering": false,
+    "allowDynamicFiltering": true,
+    "allowAgentInferredFiltering": true,
+    "filter": {
+      "distinct": false,
+      "enabled": false
+    },
+    "columnsDescriptions": [
+      {
+        "name": "gemeente"
+      },
+      {
+        "name": "contract_type"
+      },
+      {
+        "name": "uren_per_week_min"
+      },
+      {
+        "name": "uren_per_week_max"
+      },
+      {
+        "name": "vereiste_opleiding"
+      },
+      {
+        "name": "vereiste_ervaring_jaren"
+      },
+      {
+        "name": "vereiste_vaardigheden_lijst"
+      },
+      {
+        "name": "sector_gestandaardiseerd"
+      },
+      {
+        "name": "functieniveau"
+      }
+    ],
+    "retrievalColumns": [
+      "DKU_TEXT_EMBEDDING_COLUMN",
+      "job_id",
+      "gemeente",
+      "contract_type",
+      "uren_per_week_min",
+      "uren_per_week_max",
+      "vereiste_opleiding",
+      "vereiste_ervaring_jaren",
+      "vereiste_vaardigheden_lijst",
+      "sector_gestandaardiseerd",
+      "functieniveau"
+    ],
+    "searchType": "SIMILARITY",
+    "similarityThreshold": 0.5,
+    "maxDocuments": 20,
+    "mmrK": 20,
+    "mmrDiversity": 0.25,
+    "useAdvancedReranking": false,
+    "rrfRankConstant": 60,
+    "rrfRankWindowSize": 4,
+    "includeScore": false,
+    "allowEmptyQuery": false,
+    "reranking": {
+      "enabled": false,
+      "maxDocuments": 5
+    },
+    "sourcesSettings": {
+      "snippetFormat": "TEXT",
+      "metadataInSources": [
+        "gemeente",
+        "job_id",
+        "contract_type",
+        "uren_per_week_min",
+        "uren_per_week_max",
+        "vereiste_opleiding",
+        "vereiste_ervaring_jaren",
+        "vereiste_vaardigheden_lijst",
+        "sector_gestandaardiseerd",
+        "functieniveau"
+      ]
+    },
+    "augmentationFallbackStrategy": "USE_EMBEDDING",
+    "knowledgeBankRef": "0MuFrKAF"
+  },
+  "quickTestQueryStr": "{\n  \"input\": {\n    \"searchQuery\": \"Enter search query here\"\n  },\n  \"context\": {}\n}",
+  "dkuProperties": [],
+  "singleInstance": false,
+  "requireHumanApproval": true,
+  "allowEditingInputs": true,
+  "additionalDescriptionForLLM": "to filter on sector_gestandaardiseerd\nuse one of the following categories\nICT\nLogistiek\nAdministratie\nZorg\nBouw\nRetail",
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "isidora.stojanac@dataiku.com"
+    },
+    "lastModifiedOn": 1776795248290
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}

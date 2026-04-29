@@ -1,0 +1,101 @@
+[
+  {
+    "execSQLLike": false,
+    "localDatasets": [],
+    "projectPrivileges": {
+      "admin": false,
+      "editPermissions": false,
+      "readProjectContent": false,
+      "writeProjectContent": false,
+      "exportDatasetsData": false,
+      "readDashboards": false,
+      "writeDashboards": false,
+      "moderateDashboards": false,
+      "publishToDataCollections": false,
+      "shareToWorkspaces": false,
+      "runScenarios": false,
+      "manageDashboardAuthorizations": false,
+      "manageExposedElements": false,
+      "manageAdditionalDashboardUsers": false,
+      "executeApp": false
+    },
+    "onBehalf": "vOSOJo8",
+    "expiresOn": 0,
+    "id": "RD2h8y6qe5dQzKqo",
+    "key": "sha256:2pUoXD8X:805ae65a2fcb875bae3c588d25d015cc4d312bcb3ac2dbd3f3fcaf2d206d01aa",
+    "label": "Key for Web app advisor_copilot(vOSOJo8)",
+    "createdOn": 1776712445512
+  },
+  {
+    "execSQLLike": false,
+    "localDatasets": [
+      {
+        "datasets": [],
+        "privileges": [
+          "READ_DATA",
+          "READ_METADATA",
+          "READ_SCHEMA"
+        ]
+      }
+    ],
+    "projectPrivileges": {
+      "admin": false,
+      "editPermissions": false,
+      "readProjectContent": false,
+      "writeProjectContent": false,
+      "exportDatasetsData": false,
+      "readDashboards": false,
+      "writeDashboards": false,
+      "moderateDashboards": false,
+      "publishToDataCollections": false,
+      "shareToWorkspaces": false,
+      "runScenarios": false,
+      "manageDashboardAuthorizations": false,
+      "manageExposedElements": false,
+      "manageAdditionalDashboardUsers": false,
+      "executeApp": false
+    },
+    "onBehalf": "WS2Jgob",
+    "expiresOn": 0,
+    "id": "lJE8FXA0azDJqjh0",
+    "key": "sha256:jWD2L0jN:d2ff2ac2847dff8199f222a2411f19352e7b2c75fd3420623118b452b9b3167e",
+    "label": "Key for Web app Agent Chat(WS2Jgob)",
+    "createdOn": 1776793357075
+  },
+  {
+    "execSQLLike": false,
+    "localDatasets": [
+      {
+        "datasets": [],
+        "privileges": [
+          "READ_DATA",
+          "READ_METADATA",
+          "READ_SCHEMA"
+        ]
+      }
+    ],
+    "projectPrivileges": {
+      "admin": false,
+      "editPermissions": false,
+      "readProjectContent": false,
+      "writeProjectContent": false,
+      "exportDatasetsData": false,
+      "readDashboards": false,
+      "writeDashboards": false,
+      "moderateDashboards": false,
+      "publishToDataCollections": false,
+      "shareToWorkspaces": false,
+      "runScenarios": false,
+      "manageDashboardAuthorizations": false,
+      "manageExposedElements": false,
+      "manageAdditionalDashboardUsers": false,
+      "executeApp": false
+    },
+    "onBehalf": "ft1bF8V",
+    "expiresOn": 0,
+    "id": "S2Hbu7QKUKKQ2bsY",
+    "key": "sha256:e2xVbdpU:4a31ec72e0103064125eb2d7633700bcfa2dc1f5af1c3686424e4a859a2c7f14",
+    "label": "Key for Web app Agent Hub(ft1bF8V)",
+    "createdOn": 1776795352609
+  }
+]

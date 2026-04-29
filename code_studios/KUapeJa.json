@@ -1,0 +1,19 @@
+{
+  "name": "VSCode",
+  "libName": "VSCode",
+  "templateId": "claude-code",
+  "params": {},
+  "owner": "isidora.stojanac@dataiku.com",
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "isidora.stojanac@dataiku.com"
+    },
+    "lastModifiedOn": 1777456104643
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}

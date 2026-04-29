@@ -1,0 +1,18 @@
+{
+  "typeBadges": {
+    "LLM": [
+      "RECIPE:enrich_candidates",
+      "RECIPE:enrich_jobs",
+      "RECIPE:compute_job_postings_enriched_prepared_embedded",
+      "WEB_APP:WS2Jgob",
+      "WEB_APP:ft1bF8V",
+      "RECIPE:compute_ground_truth_answered"
+    ],
+    "AGENT": [
+      "WEB_APP:WS2Jgob",
+      "SAVED_MODEL:rW8vPLjm",
+      "WEB_APP:ft1bF8V",
+      "SAVED_MODEL:qTCpk4bs"
+    ]
+  }
+}

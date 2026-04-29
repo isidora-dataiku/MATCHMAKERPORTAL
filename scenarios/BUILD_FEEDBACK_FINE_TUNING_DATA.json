@@ -1,0 +1,78 @@
+{
+  "type": "step_based",
+  "name": "build_feedback_fine_tuning_data",
+  "active": false,
+  "runAsUser": "isidora.stojanac@dataiku.com",
+  "checklists": {
+    "checklists": []
+  },
+  "delayedTriggersBehavior": {
+    "delayWhileRunning": true,
+    "squashDelayedTriggers": true,
+    "suppressTriggersWhileRunning": true
+  },
+  "tags": [],
+  "triggers": [
+    {
+      "id": "3kwABbRJ",
+      "type": "ds_modified",
+      "name": "Dataset modified",
+      "delay": 10,
+      "active": true,
+      "params": {
+        "watches": [
+          {
+            "type": "DATASET",
+            "itemId": "advisor_feedback",
+            "partitionsSpec": ""
+          }
+        ],
+        "triggerWhenAllFire": false
+      },
+      "graceDelaySettings": {
+        "delay": 120,
+        "checkAgainAfterGraceDelay": true
+      }
+    }
+  ],
+  "reporters": [],
+  "params": {
+    "steps": [
+      {
+        "id": "build_0_true_d_advisor_feedback_filtered",
+        "type": "build_flowitem",
+        "name": "Step #1",
+        "enabled": true,
+        "alwaysShowComment": false,
+        "runConditionType": "RUN_IF_STATUS_MATCH",
+        "runConditionStatuses": [
+          "SUCCESS",
+          "WARNING"
+        ],
+        "runConditionExpression": "",
+        "resetScenarioStatus": false,
+        "delayBetweenRetries": 10,
+        "maxRetriesOnFail": 0,
+        "params": {
+          "builds": [
+            {
+              "type": "DATASET",
+              "itemId": "advisor_feedback_filtered",
+              "partitionsSpec": ""
+            }
+          ],
+          "jobType": "RECURSIVE_BUILD",
+          "autoUpdateSchemaBeforeEachRecipeRun": false,
+          "stopAtFlowZoneBoundary": false,
+          "refreshHiveMetastore": true,
+          "handleWarningsAs": "WARNING",
+          "proceedOnFailure": false
+        }
+      }
+    ]
+  },
+  "automationLocal": false,
+  "customFields": {},
+  "markedAsTest": false,
+  "__dku_object_version__": 1
+}

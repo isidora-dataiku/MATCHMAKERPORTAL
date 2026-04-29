@@ -1,0 +1,14 @@
+{
+  "name": "Data Enrichment \u0026 Prep",
+  "color": "#087ABF",
+  "items": [],
+  "shared": [],
+  "position": {},
+  "description": "This data processing flow is designed to transform and enrich datasets related to job candidates and job postings. Initially, raw data for candidates and job postings undergoes processing to extract and flatten JSON data, removing unnecessary columns to streamline the datasets. The flow utilizes Python and prompt-based recipes to handle and refine the data. The final output consists of two enriched and prepared datasets: \"candidates_enriched_prepared\" and \"job_postings_enriched_prepared.\" The candidates dataset includes detailed information such as candidate ID, education level, work experience, skills, and career preferences. The job postings dataset provides job details like job ID, title, company information, required skills, and job descriptions. These outputs are structured to facilitate matching candidates with suitable job opportunities based on their profiles and the job requirements.\n\nDescription generated on 22/04/2026",
+  "shortDesc": "Enrich data with LLMs",
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}

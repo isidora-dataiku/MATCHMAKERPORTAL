@@ -1,0 +1,27 @@
+{
+  "name": "lookup_candidate",
+  "type": "DatasetRowLookup",
+  "params": {
+    "retrievalMode": "SINGLE_RECORD",
+    "maxRecords": 5,
+    "datasetInteractionUserMode": "AS_TOOL_RUNNER",
+    "datasetSmartName": "candidates_enriched_prepared",
+    "datasetRef": "candidates_enriched_prepared"
+  },
+  "dkuProperties": [],
+  "singleInstance": false,
+  "requireHumanApproval": false,
+  "allowEditingInputs": false,
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "isidora.stojanac@dataiku.com"
+    },
+    "lastModifiedOn": 1776710491485
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "type": "prompt",
+  "neverRecomputeExistingPartitions": false,
+  "params": {
+    "containerSelection": {
+      "containerMode": "INHERIT"
+    }
+  },
+  "customMeta": {
+    "kv": {}
+  },
+  "redispatchPartitioning": false,
+  "maxRunningActivities": 0,
+  "hashPropagationBehavior": "INHERIT",
+  "variables": {},
+  "dkuProperties": [],
+  "inputs": {
+    "main": {
+      "items": [
+        {
+          "ref": "ground_truth",
+          "deps": []
+        }
+      ]
+    },
+    "model": {
+      "items": [
+        {
+          "ref": "qTCpk4bs",
+          "deps": []
+        }
+      ]
+    }
+  },
+  "outputs": {
+    "main": {
+      "items": [
+        {
+          "ref": "ground_truth_answered",
+          "appendMode": false
+        }
+      ]
+    }
+  },
+  "labels": [],
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "isidora.stojanac@dataiku.com"
+    },
+    "lastModifiedOn": 1776808326491
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}

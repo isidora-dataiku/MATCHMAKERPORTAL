@@ -1,0 +1,36 @@
+{
+ "workbench.secondarySideBar.defaultVisibility": "hidden",
+ "chat.disableAIFeatures": true,
+ "terminal.integrated.defaultProfile.linux": "bash",
+ "python.experiments.enabled": false,
+ "python.venvFolders": ["template-python-code-envs", "dataiku-python-code-envs"],
+ "python.defaultInterpreterPath": "/home/dataiku/dataiku-python-code-envs/py39-dss/bin/python",
+ "launch": {
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python 3.9 + dku APIs",
+            "type": "python",
+            "python": "/opt/dataiku/py39-dss/bin/python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "Default Python + dku APIs",
+            "type": "python",
+            "python": "/opt/dataiku/pyenv/bin/python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "Python: Current Interpreter",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal"
+        }
+        ]
+    }
+}

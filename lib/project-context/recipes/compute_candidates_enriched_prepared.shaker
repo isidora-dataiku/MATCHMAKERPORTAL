@@ -1,0 +1,201 @@
+{
+  "columnsSelection": {
+    "mode": "ALL",
+    "list": [
+      {
+        "d": true,
+        "name": "candidate_id"
+      },
+      {
+        "d": true,
+        "name": "geboortejaar"
+      },
+      {
+        "d": true,
+        "name": "gemeente"
+      },
+      {
+        "d": true,
+        "name": "opleiding_niveau"
+      },
+      {
+        "d": true,
+        "name": "opleiding_richting"
+      },
+      {
+        "d": true,
+        "name": "werkervaring_jaren"
+      },
+      {
+        "d": true,
+        "name": "laatste_functie"
+      },
+      {
+        "d": true,
+        "name": "vaardigheden_raw"
+      },
+      {
+        "d": true,
+        "name": "talen"
+      },
+      {
+        "d": true,
+        "name": "beschikbaarheid"
+      },
+      {
+        "d": true,
+        "name": "mobiliteitskm"
+      },
+      {
+        "d": true,
+        "name": "uitkering_type"
+      },
+      {
+        "d": true,
+        "name": "carriere_niveau"
+      },
+      {
+        "d": true,
+        "name": "sector_voorkeur"
+      },
+      {
+        "d": true,
+        "name": "vaardigheden_gestandaardiseerd"
+      },
+      {
+        "d": true,
+        "name": "profiel_samenvatting"
+      }
+    ]
+  },
+  "explorationSampling": {
+    "_refreshTrigger": 0,
+    "selection": {
+      "latestPartitionsN": 1,
+      "maxRecords": 10000,
+      "maxRecordsForDisplay": -1,
+      "ordering": {
+        "rules": [],
+        "enabled": false
+      },
+      "withinFirstN": -1,
+      "maxStoredBytes": 104857600,
+      "ascending": true,
+      "timeout": -1,
+      "filter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "partitionSelectionMethod": "ALL",
+      "targetRatio": 0.02,
+      "maxReadUncompressedBytes": -1,
+      "samplingMethod": "HEAD_SEQUENTIAL"
+    },
+    "autoRefreshSample": false
+  },
+  "explorationFilters": [],
+  "columnOrder": [],
+  "columnUseScientificNotationByName": {},
+  "origin": "PREPARE_RECIPE",
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
+  "steps": [
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "JSONFlattener",
+      "params": {
+        "maxDepth": 1,
+        "inCol": "llm_output",
+        "nullAsEmpty": true,
+        "prefixOutputs": false,
+        "flattenArrays": false,
+        "separator": ""
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnsSelector",
+      "params": {
+        "columns": [
+          "llm_output",
+          "llm_raw_response",
+          "llm_error_message",
+          "llm_raw_query",
+          "llm_validation_status"
+        ],
+        "keep": false,
+        "appliesTo": "COLUMNS"
+      },
+      "alwaysShowComment": false
+    }
+  ],
+  "maxProcessedMemTableBytes": -1,
+  "previewMode": "ALL_ROWS",
+  "vizSampling": {
+    "_refreshTrigger": 0,
+    "selection": {
+      "useMemTable": false,
+      "filter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "latestPartitionsN": 1,
+      "maxRecords": -1,
+      "ordering": {
+        "rules": [],
+        "enabled": false
+      },
+      "withinFirstN": -1,
+      "partitionSelectionMethod": "ALL",
+      "targetRatio": 0.02,
+      "maxReadUncompressedBytes": -1,
+      "samplingMethod": "FULL",
+      "ascending": true
+    },
+    "autoRefreshSample": false
+  },
+  "analysisColumnData": {},
+  "flagNumericValues": true,
+  "columnWidthsByName": {
+    "beschikbaarheid": 128,
+    "llm_output_profiel_samenvatting": 300,
+    "opleiding_richting": 197,
+    "llm_output_sector_voorkeur": 210,
+    "uitkering_type": 120,
+    "candidate_id": 105,
+    "vaardigheden_raw": 300,
+    "llm_output_vaardigheden_gestandaardiseerd": 300,
+    "vaardigheden_gestandaardiseerd": 300,
+    "talen": 190,
+    "profiel_samenvatting": 300,
+    "llm_error_message": 143,
+    "llm_raw_response": 300,
+    "carriere_niveau": 128,
+    "opleiding_niveau": 135,
+    "llm_validation_status": 173,
+    "llm_output": 300,
+    "llm_raw_query": 300,
+    "mobiliteitskm": 113,
+    "sector_voorkeur": 134,
+    "laatste_functie": 260,
+    "llm_output_carriere_niveau": 210,
+    "gemeente": 106,
+    "geboortejaar": 105,
+    "werkervaring_jaren": 150
+  },
+  "sorting": [],
+  "globalSearchQuery": "",
+  "coloring": {
+    "scheme": "MEANING_AND_STATUS",
+    "individualColumns": [],
+    "coloringGroups": [],
+    "valueColoringMode": "HASH",
+    "individualColumnsRules": []
+  }
+}

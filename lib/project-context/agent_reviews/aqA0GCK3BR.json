@@ -1,0 +1,39 @@
+{
+  "name": "Janneke2: Job Matching Agent (chat friendly) review 2",
+  "agentSmartId": "qTCpk4bs",
+  "owner": "isidora.stojanac@dataiku.com",
+  "creationTimestamp": 1776836734732,
+  "nbExecutions": 2,
+  "traits": [
+    {
+      "id": "u9XmxoKA09",
+      "name": "Reference",
+      "description": "Compare the correctness of the answer to the reference, given the query",
+      "criteria": "The Agent\u0027s Answer conveys the same meaning as the Reference Answer.\nOnly semantic equivalence or near-equivalence is acceptable.\nAny contradiction, significant omission, or added meaning results in outcome \u003d false.\nDo not judge correctness or quality beyond this comparison.\n",
+      "enabled": true,
+      "needsReference": true,
+      "needsExpectations": false
+    },
+    {
+      "id": "ic5uQYgtso",
+      "name": "Expectations",
+      "description": "The answer matches the expectations",
+      "criteria": "The Agent\u0027s execution (Answer and Trajectory combined) satisfies the defined Expectations.\nCommute expectations can be expressed in hours or distance, both are acceptable.\n",
+      "enabled": true,
+      "needsReference": false,
+      "needsExpectations": true
+    }
+  ],
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "isidora.stojanac@dataiku.com"
+    },
+    "lastModifiedOn": 1776836734732
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}

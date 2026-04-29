@@ -1,0 +1,83 @@
+{
+  "name": "search_jobs",
+  "type": "VectorStoreSearch",
+  "params": {
+    "includeMultimodalContent": false,
+    "enforceDocumentLevelSecurity": false,
+    "performFiltering": false,
+    "allowDynamicFiltering": true,
+    "allowAgentInferredFiltering": true,
+    "filter": {
+      "distinct": false,
+      "enabled": false
+    },
+    "columnsDescriptions": [
+      {
+        "name": "sector_gestandaardiseerd",
+        "description": "First letter is capital"
+      }
+    ],
+    "retrievalColumns": [
+      "DKU_TEXT_EMBEDDING_COLUMN",
+      "job_id",
+      "gemeente",
+      "contract_type",
+      "uren_per_week_min",
+      "uren_per_week_max",
+      "vereiste_opleiding",
+      "vereiste_ervaring_jaren",
+      "vereiste_vaardigheden_lijst",
+      "sector_gestandaardiseerd",
+      "functieniveau"
+    ],
+    "searchType": "SIMILARITY",
+    "similarityThreshold": 0.5,
+    "maxDocuments": 5,
+    "mmrK": 20,
+    "mmrDiversity": 0.25,
+    "useAdvancedReranking": false,
+    "rrfRankConstant": 60,
+    "rrfRankWindowSize": 4,
+    "includeScore": true,
+    "allowEmptyQuery": false,
+    "reranking": {
+      "enabled": false,
+      "maxDocuments": 5
+    },
+    "sourcesSettings": {
+      "snippetFormat": "TEXT",
+      "metadataInSources": [
+        "job_id",
+        "functieniveau",
+        "sector_gestandaardiseerd",
+        "gemeente",
+        "contract_type",
+        "uren_per_week_min",
+        "uren_per_week_max",
+        "vereiste_opleiding",
+        "vereiste_ervaring_jaren",
+        "vereiste_vaardigheden_lijst"
+      ]
+    },
+    "augmentationFallbackStrategy": "USE_EMBEDDING",
+    "knowledgeBankRef": "0MuFrKAF"
+  },
+  "quickTestQueryStr": "{\n  \"input\": {\n    \"searchQuery\": \"Enter search query here\"\n  },\n  \"context\": {}\n}",
+  "dkuProperties": [],
+  "singleInstance": false,
+  "requireHumanApproval": false,
+  "allowEditingInputs": false,
+  "additionalDescriptionForLLM": "to filter on sector_gestandaardiseerd\nuse one of the following categories\nICT\nLogistiek\nAdministratie\nZorg\nBouw\nRetail",
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "isidora.stojanac@dataiku.com"
+    },
+    "lastModifiedOn": 1776710490747
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}

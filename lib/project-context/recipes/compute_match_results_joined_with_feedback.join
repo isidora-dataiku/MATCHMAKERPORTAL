@@ -1,0 +1,402 @@
+{
+  "joins": [
+    {
+      "table2": 1,
+      "table1": 0,
+      "conditionsMode": "AND",
+      "type": "RIGHT",
+      "outerJoinOnTheLeft": true,
+      "on": [
+        {
+          "column1": {
+            "name": "match_id",
+            "table": 0
+          },
+          "dateDiffUnit": "DAY",
+          "windowFrom": 0,
+          "column2": {
+            "name": "match_id",
+            "table": 1
+          },
+          "maxMatches": 1,
+          "caseInsensitive": false,
+          "maxDistance": 0,
+          "normalizeText": false,
+          "type": "EQ",
+          "strict": false,
+          "windowTo": 0
+        },
+        {
+          "column1": {
+            "name": "session_id",
+            "table": 0
+          },
+          "dateDiffUnit": "DAY",
+          "windowFrom": 0,
+          "column2": {
+            "name": "session_id",
+            "table": 1
+          },
+          "maxMatches": 1,
+          "caseInsensitive": false,
+          "maxDistance": 0,
+          "normalizeText": false,
+          "type": "EQ",
+          "strict": false,
+          "windowTo": 0
+        },
+        {
+          "column1": {
+            "name": "candidate_id",
+            "table": 0
+          },
+          "dateDiffUnit": "DAY",
+          "windowFrom": 0,
+          "column2": {
+            "name": "candidate_id",
+            "table": 1
+          },
+          "maxMatches": 1,
+          "caseInsensitive": false,
+          "maxDistance": 0,
+          "normalizeText": false,
+          "type": "EQ",
+          "strict": false,
+          "windowTo": 0
+        },
+        {
+          "column1": {
+            "name": "job_id",
+            "table": 0
+          },
+          "dateDiffUnit": "DAY",
+          "windowFrom": 0,
+          "column2": {
+            "name": "job_id",
+            "table": 1
+          },
+          "maxMatches": 1,
+          "caseInsensitive": false,
+          "maxDistance": 0,
+          "normalizeText": false,
+          "type": "EQ",
+          "strict": false,
+          "windowTo": 0
+        }
+      ]
+    }
+  ],
+  "selectedColumns": [
+    {
+      "name": "match_id",
+      "type": "string",
+      "table": 0
+    },
+    {
+      "name": "session_id",
+      "type": "string",
+      "table": 0
+    },
+    {
+      "name": "candidate_id",
+      "type": "string",
+      "table": 0
+    },
+    {
+      "name": "job_id",
+      "type": "string",
+      "table": 0
+    },
+    {
+      "name": "match_score",
+      "type": "double",
+      "table": 0
+    },
+    {
+      "name": "semantic_score",
+      "type": "double",
+      "table": 0
+    },
+    {
+      "name": "skill_overlap_pct",
+      "type": "double",
+      "table": 0
+    },
+    {
+      "name": "experience_fit",
+      "type": "string",
+      "table": 0
+    },
+    {
+      "name": "education_fit",
+      "type": "string",
+      "table": 0
+    },
+    {
+      "name": "location_fit",
+      "type": "boolean",
+      "table": 0
+    },
+    {
+      "name": "hours_fit",
+      "type": "boolean",
+      "table": 0
+    },
+    {
+      "name": "match_summary_nl",
+      "type": "string",
+      "table": 0
+    },
+    {
+      "name": "top_matching_skills",
+      "type": "string",
+      "table": 0
+    },
+    {
+      "name": "missing_skills",
+      "type": "string",
+      "table": 0
+    },
+    {
+      "name": "rank_in_session",
+      "type": "bigint",
+      "table": 0
+    },
+    {
+      "name": "generated_at",
+      "type": "string",
+      "table": 0
+    },
+    {
+      "name": "llm_model_version",
+      "type": "string",
+      "table": 0
+    },
+    {
+      "name": "guardrail_passed",
+      "type": "boolean",
+      "table": 0
+    },
+    {
+      "name": "feedback_id",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "advisor_beslissing",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "afwijzing_reden_code",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "afwijzing_toelichting",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "match_score_at_time",
+      "type": "double",
+      "table": 1
+    },
+    {
+      "name": "match_summary_at_time",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "beslissing_timestamp",
+      "type": "string",
+      "table": 1
+    }
+  ],
+  "resolvedSelectedColumns": [],
+  "engineParams": {
+    "hive": {
+      "skipPrerunValidate": false,
+      "hiveconf": [],
+      "inheritConf": "default",
+      "addDkuUdf": false,
+      "executionEngine": "HIVESERVER2"
+    },
+    "sqlPipelineParams": {
+      "pipelineAllowMerge": true,
+      "pipelineAllowStart": true
+    },
+    "impala": {
+      "forceStreamMode": true
+    },
+    "containerSelection": {
+      "containerMode": "INHERIT"
+    },
+    "lowerCaseSchemaIfEngineRequiresIt": true,
+    "sparkSQL": {
+      "skipPrerunValidate": false,
+      "pipelineAllowMerge": true,
+      "useGlobalMetastore": false,
+      "pipelineAllowStart": true,
+      "readParams": {
+        "mode": "AUTO",
+        "autoModeRepartitionInto": 10,
+        "map": {}
+      },
+      "overwriteOutputSchema": false,
+      "executionEngine": "SPARK_SUBMIT",
+      "sparkConfig": {
+        "inheritConf": "default",
+        "conf": []
+      }
+    }
+  },
+  "virtualInputs": [
+    {
+      "outputColumnsSelectionMode": "MANUAL",
+      "preFilter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "originLabel": "match_results",
+      "index": 0,
+      "computedColumns": []
+    },
+    {
+      "outputColumnsSelectionMode": "MANUAL",
+      "preFilter": {
+        "uiData": {
+          "mode": "\u0026\u0026",
+          "$latestOperator": "\u0026\u0026",
+          "$filterOptions": "rules",
+          "conditions": [
+            {
+              "input": "advisor_beslissing",
+              "col": "match_id",
+              "string": "afgewezen",
+              "$showList": false,
+              "operator": "\u003d\u003d [string]"
+            }
+          ]
+        },
+        "$status": {},
+        "distinct": false,
+        "enabled": true
+      },
+      "originLabel": "advisor_feedback",
+      "index": 1,
+      "computedColumns": []
+    }
+  ],
+  "computedColumns": [],
+  "postFilter": {
+    "$status": {
+      "schema": {
+        "columns": [
+          {
+            "name": "match_id",
+            "type": "string"
+          },
+          {
+            "name": "session_id",
+            "type": "string"
+          },
+          {
+            "name": "candidate_id",
+            "type": "string"
+          },
+          {
+            "name": "job_id",
+            "type": "string"
+          },
+          {
+            "name": "match_score",
+            "type": "double"
+          },
+          {
+            "name": "semantic_score",
+            "type": "double"
+          },
+          {
+            "name": "skill_overlap_pct",
+            "type": "double"
+          },
+          {
+            "name": "experience_fit",
+            "type": "string"
+          },
+          {
+            "name": "education_fit",
+            "type": "string"
+          },
+          {
+            "name": "location_fit",
+            "type": "boolean"
+          },
+          {
+            "name": "hours_fit",
+            "type": "boolean"
+          },
+          {
+            "name": "match_summary_nl",
+            "type": "string"
+          },
+          {
+            "name": "top_matching_skills",
+            "type": "string"
+          },
+          {
+            "name": "missing_skills",
+            "type": "string"
+          },
+          {
+            "name": "rank_in_session",
+            "type": "bigint"
+          },
+          {
+            "name": "generated_at",
+            "type": "string"
+          },
+          {
+            "name": "llm_model_version",
+            "type": "string"
+          },
+          {
+            "name": "guardrail_passed",
+            "type": "boolean"
+          },
+          {
+            "name": "feedback_id",
+            "type": "string"
+          },
+          {
+            "name": "advisor_beslissing",
+            "type": "string"
+          },
+          {
+            "name": "afwijzing_reden_code",
+            "type": "string"
+          },
+          {
+            "name": "afwijzing_toelichting",
+            "type": "string"
+          },
+          {
+            "name": "match_score_at_time",
+            "type": "double"
+          },
+          {
+            "name": "match_summary_at_time",
+            "type": "string"
+          },
+          {
+            "name": "beslissing_timestamp",
+            "type": "string"
+          }
+        ],
+        "userModified": false
+      }
+    }
+  },
+  "enableAutoCastInJoinConditions": false
+}

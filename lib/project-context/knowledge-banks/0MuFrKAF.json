@@ -1,0 +1,39 @@
+{
+  "name": "job_postings_enriched_prepared_embedded",
+  "retrieverType": "VECTOR_STORE_BACKED",
+  "rebuildBehavior": "EXPLICIT",
+  "vectorStoreType": "CHROMA",
+  "embeddingLLMId": "openai:OpenAI:text-embedding-3-small",
+  "distanceMetric": "DEFAULT",
+  "metadataColumnsSchema": [
+    {"name":"job_id","type":"string"},
+    {"name":"gemeente","type":"string"},
+    {"name":"contract_type","type":"string"},
+    {"name":"uren_per_week_min","type":"bigint"},
+    {"name":"uren_per_week_max","type":"bigint"},
+    {"name":"vereiste_opleiding","type":"string"},
+    {"name":"vereiste_ervaring_jaren","type":"bigint"},
+    {"name":"vereiste_vaardigheden_lijst","type":"string"},
+    {"name":"sector_gestandaardiseerd","type":"string"},
+    {"name":"functieniveau","type":"string"}
+  ],
+  "envSelection": {
+    "envMode": "EXPLICIT_ENV",
+    "envName": "INTERNAL_retrieval_augmented_generation_v1"
+  },
+  "containerExecSelection": {
+    "containerMode": "NONE"
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "isidora.stojanac@dataiku.com"
+    },
+    "lastModifiedOn": 1776709763409
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}

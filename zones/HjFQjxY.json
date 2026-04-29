@@ -1,0 +1,34 @@
+{
+  "name": "Agentic",
+  "color": "#8C2DA7",
+  "items": [
+    {
+      "objectId": "88Dxqn0F",
+      "objectType": "SAVED_MODEL"
+    },
+    {
+      "objectId": "compute_job_postings_enriched_prepared_embedded",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "rW8vPLjm",
+      "objectType": "SAVED_MODEL"
+    },
+    {
+      "objectId": "qTCpk4bs",
+      "objectType": "SAVED_MODEL"
+    },
+    {
+      "objectId": "0MuFrKAF",
+      "objectType": "RETRIEVABLE_KNOWLEDGE"
+    }
+  ],
+  "shared": [],
+  "position": {},
+  "shortDesc": "Place to group all agents in the project",
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}

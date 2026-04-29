@@ -1,0 +1,50 @@
+{
+  "type": "nlp_llm_rag_embedding",
+  "neverRecomputeExistingPartitions": false,
+  "params": {
+    "containerSelection": {
+      "containerMode": "INHERIT"
+    }
+  },
+  "customMeta": {
+    "kv": {}
+  },
+  "redispatchPartitioning": false,
+  "maxRunningActivities": 0,
+  "hashPropagationBehavior": "INHERIT",
+  "variables": {},
+  "dkuProperties": [],
+  "inputs": {
+    "main": {
+      "items": [
+        {
+          "ref": "job_postings_enriched_prepared",
+          "deps": []
+        }
+      ]
+    }
+  },
+  "outputs": {
+    "knowledge_bank": {
+      "items": [
+        {
+          "ref": "0MuFrKAF",
+          "appendMode": false
+        }
+      ]
+    }
+  },
+  "labels": [],
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "isidora.stojanac@dataiku.com"
+    },
+    "lastModifiedOn": 1776709763412
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}

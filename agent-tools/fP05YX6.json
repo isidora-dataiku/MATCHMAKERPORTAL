@@ -1,0 +1,55 @@
+{
+  "name": "search_candidates",
+  "type": "VectorStoreSearch",
+  "params": {
+    "includeMultimodalContent": false,
+    "enforceDocumentLevelSecurity": false,
+    "performFiltering": false,
+    "allowDynamicFiltering": false,
+    "allowAgentInferredFiltering": false,
+    "filter": {
+      "distinct": false,
+      "enabled": false
+    },
+    "columnsDescriptions": [],
+    "retrievalColumns": [
+      "DKU_TEXT_EMBEDDING_COLUMN"
+    ],
+    "searchType": "SIMILARITY",
+    "similarityThreshold": 0.5,
+    "maxDocuments": 10,
+    "mmrK": 20,
+    "mmrDiversity": 0.25,
+    "useAdvancedReranking": false,
+    "rrfRankConstant": 60,
+    "rrfRankWindowSize": 4,
+    "includeScore": false,
+    "allowEmptyQuery": false,
+    "reranking": {
+      "enabled": false,
+      "maxDocuments": 5
+    },
+    "sourcesSettings": {
+      "snippetFormat": "TEXT",
+      "metadataInSources": []
+    },
+    "augmentationFallbackStrategy": "USE_EMBEDDING",
+    "knowledgeBankRef": "ljUBFWVN"
+  },
+  "dkuProperties": [],
+  "singleInstance": false,
+  "requireHumanApproval": false,
+  "allowEditingInputs": false,
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "isidora.stojanac@dataiku.com"
+    },
+    "lastModifiedOn": 1776710491118
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}

@@ -1,0 +1,203 @@
+{
+  "type": "S3",
+  "managed": true,
+  "featureGroup": false,
+  "formatType": "csv",
+  "checklists": {
+    "checklists": []
+  },
+  "checks": [],
+  "customMeta": {
+    "kv": {}
+  },
+  "flowOptions": {
+    "virtualizable": false,
+    "rebuildBehavior": "NORMAL",
+    "crossProjectBuildBehavior": "DEFAULT",
+    "ignoreErrorStatusOnBuild": false
+  },
+  "readWriteOptions": {
+    "preserveOrder": false,
+    "writeBuckets": 1,
+    "forceSingleOutputFile": false,
+    "defaultReadOrdering": {
+      "enabled": false,
+      "rules": []
+    }
+  },
+  "formatParams": {
+    "style": "escape_only_no_quote",
+    "charset": "utf8",
+    "separator": "\t",
+    "quoteChar": "\"",
+    "escapeChar": "\\",
+    "maxRowChars": 100000000,
+    "arrayItemSeparator": "\u0002",
+    "mapKeySeparator": "\u0003",
+    "dateSerializationFormat": "HIVE",
+    "arrayMapFormat": "hive",
+    "hiveSeparators": [
+      "\u0002",
+      "\u0003",
+      "\u0004",
+      "\u0005",
+      "\u0006",
+      "\u0007",
+      "\b"
+    ],
+    "skipRowsBeforeHeader": 0,
+    "parseHeaderRow": false,
+    "skipRowsAfterHeader": 0,
+    "probableNumberOfRecords": 0,
+    "normalizeBooleans": false,
+    "normalizeDoubles": true,
+    "readAdditionalColumnsBehavior": "INSERT_IN_DATA_WARNING",
+    "readMissingColumnsBehavior": "DISCARD_SILENT",
+    "readDataTypeMismatchBehavior": "DISCARD_WARNING",
+    "writeDataTypeMismatchBehavior": "DISCARD_WARNING",
+    "fileReadFailureBehavior": "FAIL",
+    "compress": ""
+  },
+  "partitioning": {
+    "ignoreNonMatchingFile": false,
+    "considerMissingRequestedPartitionsAsEmpty": false,
+    "dimensions": []
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "isidora.stojanac@dataiku.com"
+    },
+    "lastModifiedOn": 1776708087040
+  },
+  "tags": [],
+  "params": {
+    "bucket": "gis-dataiker-2-data-1",
+    "metastoreSynchronizationEnabled": true,
+    "metastoreDatabaseName": "default",
+    "metastoreTableName": "${projectKey}_job_postings_enriched",
+    "connection": "dataiku-managed-storage",
+    "path": "/managed-dss-data/${projectKey}/job_postings_enriched",
+    "notReadyIfEmpty": false,
+    "filesSelectionRules": {
+      "mode": "ALL",
+      "excludeRules": [],
+      "includeRules": [],
+      "explicitFiles": []
+    },
+    "variablesExpansionLoopConfig": {
+      "enabled": false,
+      "mode": "CREATE_VARIABLE_FOR_EACH_COLUMN",
+      "replacements": []
+    }
+  },
+  "schema": {
+    "columns": [
+      {"name":"job_id","type":"string"},
+      {"name":"titel","type":"string"},
+      {"name":"bedrijf_naam","type":"string"},
+      {"name":"bedrijf_sector","type":"string"},
+      {"name":"gemeente","type":"string"},
+      {"name":"contract_type","type":"string"},
+      {"name":"uren_per_week_min","type":"bigint"},
+      {"name":"uren_per_week_max","type":"bigint"},
+      {"name":"vereiste_opleiding","type":"string"},
+      {"name":"vereiste_ervaring_jaren","type":"bigint"},
+      {"name":"vereiste_vaardigheden_raw","type":"string"},
+      {"name":"omschrijving","type":"string"},
+      {"name":"status","type":"string"},
+      {"name":"llm_output","type":"string"},
+      {"name":"llm_validation_status","type":"string"},
+      {"name":"llm_raw_response","type":"string"},
+      {"name":"llm_error_message","type":"string"},
+      {"name":"llm_raw_query","type":"string"}
+    ],
+    "userModified": true
+  },
+  "typeSystemVersion": "V2",
+  "dkuProperties": [],
+  "metrics": {
+    "probes": [
+      {
+        "type": "basic",
+        "enabled": true,
+        "computeOnBuildMode": "PARTITION",
+        "meta": {
+          "name": "Basic data",
+          "level": 0
+        },
+        "configuration": {}
+      },
+      {
+        "type": "records",
+        "enabled": true,
+        "computeOnBuildMode": "NO",
+        "meta": {
+          "name": "Record count",
+          "level": 0
+        },
+        "configuration": {}
+      }
+    ],
+    "engineConfig": {
+      "padRunsWithMetrics": false,
+      "hive": {
+        "active": true,
+        "extraConf": []
+      },
+      "basic": {},
+      "dss": {
+        "active": true,
+        "selection": {
+          "useMemTable": false,
+          "filter": {
+            "distinct": false,
+            "enabled": false
+          },
+          "partitionSelectionMethod": "ALL",
+          "latestPartitionsN": 1,
+          "ordering": {
+            "enabled": false,
+            "rules": []
+          },
+          "samplingMethod": "FULL",
+          "maxRecords": -1,
+          "targetRatio": 0.02,
+          "ascending": true,
+          "withinFirstN": -1,
+          "maxReadUncompressedBytes": -1
+        }
+      },
+      "sql": {
+        "active": true
+      },
+      "impala": {
+        "active": true
+      },
+      "spark": {
+        "active": true,
+        "extraConf": []
+      },
+      "python": {}
+    },
+    "displayedState": {
+      "columns": [],
+      "metrics": [
+        "basic:COUNT_COLUMNS",
+        "basic:COUNT_FILES",
+        "basic:SIZE",
+        "records:COUNT_RECORDS"
+      ]
+    }
+  },
+  "metricsChecks": {
+    "monitor": false,
+    "checks": [],
+    "displayedState": {
+      "checks": []
+    }
+  },
+  "customFields": {
+    "gdpr_contains_personal_data": "UNSURE"
+  }
+}

@@ -1,0 +1,202 @@
+{
+  "columnsSelection": {
+    "mode": "ALL",
+    "list": [
+      {
+        "d": true,
+        "name": "job_id"
+      },
+      {
+        "d": true,
+        "name": "titel"
+      },
+      {
+        "d": true,
+        "name": "bedrijf_naam"
+      },
+      {
+        "d": true,
+        "name": "bedrijf_sector"
+      },
+      {
+        "d": true,
+        "name": "gemeente"
+      },
+      {
+        "d": true,
+        "name": "contract_type"
+      },
+      {
+        "d": true,
+        "name": "uren_per_week_min"
+      },
+      {
+        "d": true,
+        "name": "uren_per_week_max"
+      },
+      {
+        "d": true,
+        "name": "vereiste_opleiding"
+      },
+      {
+        "d": true,
+        "name": "vereiste_ervaring_jaren"
+      },
+      {
+        "d": true,
+        "name": "vereiste_vaardigheden_raw"
+      },
+      {
+        "d": true,
+        "name": "omschrijving"
+      },
+      {
+        "d": true,
+        "name": "status"
+      },
+      {
+        "d": true,
+        "name": "vereiste_vaardigheden_lijst"
+      },
+      {
+        "d": true,
+        "name": "samenvatting"
+      },
+      {
+        "d": true,
+        "name": "sector_gestandaardiseerd"
+      },
+      {
+        "d": true,
+        "name": "functieniveau"
+      }
+    ]
+  },
+  "explorationSampling": {
+    "_refreshTrigger": 0,
+    "selection": {
+      "latestPartitionsN": 1,
+      "maxRecords": 10000,
+      "maxRecordsForDisplay": -1,
+      "ordering": {
+        "rules": [],
+        "enabled": false
+      },
+      "withinFirstN": -1,
+      "maxStoredBytes": 104857600,
+      "ascending": true,
+      "timeout": -1,
+      "filter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "partitionSelectionMethod": "ALL",
+      "targetRatio": 0.02,
+      "maxReadUncompressedBytes": -1,
+      "samplingMethod": "HEAD_SEQUENTIAL"
+    },
+    "autoRefreshSample": false
+  },
+  "explorationFilters": [],
+  "columnOrder": [],
+  "columnUseScientificNotationByName": {},
+  "origin": "PREPARE_RECIPE",
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
+  "steps": [
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "JSONFlattener",
+      "params": {
+        "maxDepth": 1,
+        "inCol": "llm_output",
+        "nullAsEmpty": true,
+        "prefixOutputs": false,
+        "flattenArrays": false,
+        "separator": ""
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnsSelector",
+      "params": {
+        "columns": [
+          "llm_output",
+          "llm_raw_response",
+          "llm_error_message",
+          "llm_raw_query",
+          "llm_validation_status"
+        ],
+        "keep": false,
+        "appliesTo": "COLUMNS"
+      },
+      "alwaysShowComment": false
+    }
+  ],
+  "maxProcessedMemTableBytes": -1,
+  "previewMode": "ALL_ROWS",
+  "vizSampling": {
+    "_refreshTrigger": 0,
+    "selection": {
+      "useMemTable": false,
+      "filter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "latestPartitionsN": 1,
+      "maxRecords": -1,
+      "ordering": {
+        "rules": [],
+        "enabled": false
+      },
+      "withinFirstN": -1,
+      "partitionSelectionMethod": "ALL",
+      "targetRatio": 0.02,
+      "maxReadUncompressedBytes": -1,
+      "samplingMethod": "FULL",
+      "ascending": true
+    },
+    "autoRefreshSample": false
+  },
+  "analysisColumnData": {},
+  "flagNumericValues": true,
+  "columnWidthsByName": {
+    "llm_error_message": 143,
+    "llm_raw_response": 300,
+    "vereiste_vaardigheden_lijst": 300,
+    "llm_validation_status": 173,
+    "vereiste_vaardigheden_raw": 300,
+    "llm_output": 300,
+    "llm_raw_query": 300,
+    "sector_gestandaardiseerd": 195,
+    "uren_per_week_min": 143,
+    "omschrijving": 300,
+    "contract_type": 113,
+    "vereiste_ervaring_jaren": 188,
+    "titel": 260,
+    "job_id": 100,
+    "samenvatting": 300,
+    "uren_per_week_max": 143,
+    "bedrijf_naam": 218,
+    "bedrijf_sector": 120,
+    "vereiste_opleiding": 150,
+    "gemeente": 106,
+    "functieniveau": 113,
+    "status": 100
+  },
+  "sorting": [],
+  "globalSearchQuery": "",
+  "coloring": {
+    "scheme": "MEANING_AND_STATUS",
+    "individualColumns": [],
+    "coloringGroups": [],
+    "valueColoringMode": "HASH",
+    "individualColumnsRules": []
+  }
+}

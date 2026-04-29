@@ -1,0 +1,69 @@
+{
+  "type": "webapp_agent-hub_agent-hub",
+  "hasLegacyBackendURL": false,
+  "params": {
+    "backendEnabled": true,
+    "enableJavascriptModules": true,
+    "autoStartBackend": false,
+    "hideJSSecurityPanel": true,
+    "hideWebAppConfig": false,
+    "envSelection": {
+      "envMode": "INHERIT"
+    },
+    "nbProcesses": 0,
+    "backendAPIAccessEnabled": false,
+    "backendFramework": "FLASK",
+    "libraries": [
+      "dataiku"
+    ],
+    "infra": {
+      "containerSelection": {
+        "containerMode": "NONE"
+      },
+      "overrideGlobalK8sExposition": false,
+      "exposition": {
+        "type": "local_process",
+        "params": {}
+      },
+      "scaling": {
+        "initialReplicas": 1,
+        "progressDeadlineSeconds": 600,
+        "hpa": false,
+        "hpaTargetCPUPercent": 0,
+        "hpaTargetMemoryPercent": 0,
+        "hpaMetrics": [],
+        "hpaMinPods": 0,
+        "hpaMaxPods": 0,
+        "hpaAnnotations": []
+      },
+      "podDisruptionBudget": {
+        "enable": false,
+        "isMaxUnavailable": false,
+        "minAvailable": "50%"
+      },
+      "deploymentModifier": {
+        "config": {}
+      }
+    },
+    "forceAuthentication": false
+  },
+  "config": {
+    "storage_type": "LOCAL",
+    "log_level": "DEBUG"
+  },
+  "name": "Agent Hub",
+  "apiKey": "e:AES:X2:45RNHONI/VcRgIq1YGnL9rqzSXxkgoTilS1OeOnf3ix7mwx6GgvZ4kMKrgeuKzYtLlWJnlo9TO0yRcbJdmh1P9o1FflQF+WDn+eSYSwN1PF3RoPTaEvW",
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "isidora.stojanac@dataiku.com"
+    },
+    "lastModifiedOn": 1776795352610
+  },
+  "tags": [],
+  "checklists": {
+    "checklists": []
+  },
+  "customFields": {},
+  "isVirtual": false
+}

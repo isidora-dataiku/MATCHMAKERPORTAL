@@ -1,0 +1,70 @@
+{
+  "type": "webapp_agent-hub_agent-hub-light",
+  "hasLegacyBackendURL": false,
+  "params": {
+    "backendEnabled": true,
+    "enableJavascriptModules": true,
+    "autoStartBackend": false,
+    "hideJSSecurityPanel": true,
+    "hideWebAppConfig": false,
+    "envSelection": {
+      "envMode": "INHERIT"
+    },
+    "nbProcesses": 0,
+    "backendAPIAccessEnabled": false,
+    "backendFramework": "FLASK",
+    "libraries": [
+      "dataiku"
+    ],
+    "runAs": "isidora.stojanac@dataiku.com",
+    "infra": {
+      "containerSelection": {
+        "containerMode": "NONE"
+      },
+      "overrideGlobalK8sExposition": false,
+      "exposition": {
+        "type": "local_process",
+        "params": {}
+      },
+      "scaling": {
+        "initialReplicas": 1,
+        "progressDeadlineSeconds": 600,
+        "hpa": false,
+        "hpaTargetCPUPercent": 0,
+        "hpaTargetMemoryPercent": 0,
+        "hpaMetrics": [],
+        "hpaMinPods": 0,
+        "hpaMaxPods": 0,
+        "hpaAnnotations": []
+      },
+      "podDisruptionBudget": {
+        "enable": false,
+        "isMaxUnavailable": false,
+        "minAvailable": "50%"
+      },
+      "deploymentModifier": {
+        "config": {}
+      }
+    },
+    "forceAuthentication": false
+  },
+  "config": {
+    "storage_type": "LOCAL",
+    "log_level": "INFO"
+  },
+  "name": "Agent Chat",
+  "apiKey": "e:AES:X2:ZOvsmzjG6ZJdoiSMrZJuvb32YLZ4N7eUN88n5FTh7OGyh+gbsTyKg61w+EGQQLvcDxcVYhmZU0d00PBRYGFOJCHrPPqpwRidUsVxvcHhZIfEqjEaQO6O",
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "isidora.stojanac@dataiku.com"
+    },
+    "lastModifiedOn": 1776793357076
+  },
+  "tags": [],
+  "checklists": {
+    "checklists": []
+  },
+  "customFields": {},
+  "isVirtual": false
+}

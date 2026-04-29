@@ -1,19 +1,7 @@
 {
-  "gitReferences": {
-    "project-context": {
-      "remote": "git@github.com:isidora-dataiku/UWVMATCHMAKERPORTAL.git",
-      "checkout": "",
-      "remotePath": "",
-      "lastHash": "934a517418c88d1707eb66ce3427ad7aaed51030",
-      "conflictingFiles": [],
-      "resolvedFiles": [],
-      "faultyHash": "",
-      "isDirty": false
-    }
-  },
+  "gitReferences": {},
   "pythonPath": [
-    "python",
-    "project-context"
+    "python"
   ],
   "rsrcPath": [
     "R"

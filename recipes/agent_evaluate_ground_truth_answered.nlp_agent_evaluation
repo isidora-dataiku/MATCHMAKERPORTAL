@@ -41,6 +41,46 @@
     "bertScore"
   ],
   "customMetrics": [],
-  "customTraits": [],
-  "labels": []
+  "customTraits": [
+    {
+      "name": "Single-turn Conciseness",
+      "description": "Evaluates the conciseness of each individual turn in the conversation.",
+      "prompt": "The Output is concise: it provides only the requested information in as few words as possible, avoiding unneeded repetitions, pleasantries or explanations.",
+      "isConversation": false,
+      "enabled": false,
+      "isBuiltin": true,
+      "type": "TRAIT"
+    }
+  ],
+  "labels": [],
+  "customConversationMetrics": [],
+  "customConversationTraits": [
+    {
+      "name": "Conversational Conciseness",
+      "description": "Evaluates the conciseness of the conversation as a whole, taking into account all the turns between the User and the Assistant.",
+      "prompt": "The conversation is concise: all the turns taken between the User and the Assistant are required for the User's task. There is no unnecessary back and forth, no turns are taken up by unneeded pleasantries, introductions or parting messages.",
+      "isConversation": true,
+      "enabled": false,
+      "isBuiltin": true,
+      "type": "TRAIT"
+    },
+    {
+      "name": "Goal Success Rate",
+      "description": "Evaluates the Agent's ability to successfully identify and achieve the User's goals throughout the conversation.",
+      "prompt": "The conversation between the User and the Assistant completed successfully. Consider the conversation successful if:\n- The Assistant correctly identified each of User's requested goals or tasks, and the User received satisfactory outcomes for each of them\n- For each goal or task requiring external information or action, the Assistant selected relevant tools if they were available to it, providing the correct inputs and correctly retrieving the outputs\n",
+      "isConversation": true,
+      "enabled": false,
+      "isBuiltin": true,
+      "type": "TRAIT"
+    },
+    {
+      "name": "Customer Satisfaction",
+      "description": "Evaluates the User's overall satisfaction with the Assistant's performance.",
+      "prompt": "The User is satisfied by their interaction with the Agent.\nConsider the User to be satisfied if they:\n- Express gratitude at the solution provided by the Assistant\n- Confirm their problem was resolved or their question answered\n- End the conversation on a positive or neutral note after receiving an appropriate response\nConsider the user to not be satisfied if they:\n- Express frustration, annoyance or anger\n- Repeatedly ask the same question because the Assistant failed to understand their question or to properly answer it\n- Explicitly state that the AI is wrong, unhelpful or hallucinating\n- Abandon the conversation abruptly after a clear failure by the Assistant to help\n",
+      "isConversation": true,
+      "enabled": false,
+      "isBuiltin": true,
+      "type": "TRAIT"
+    }
+  ]
 }

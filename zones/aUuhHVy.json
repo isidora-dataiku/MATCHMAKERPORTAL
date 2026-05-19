@@ -5,10 +5,6 @@
     {
       "objectId": "Pn6vLJqs",
       "objectType": "MANAGED_FOLDER"
-    },
-    {
-      "objectId": "compute_uploads_files",
-      "objectType": "RECIPE"
     }
   ],
   "shared": [],

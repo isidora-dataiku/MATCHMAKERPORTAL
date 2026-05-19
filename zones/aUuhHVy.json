@@ -21,10 +21,6 @@
     {
       "objectId": "uploads_files",
       "objectType": "DATASET"
-    },
-    {
-      "objectId": "bounding_boxes",
-      "objectType": "DATASET"
     }
   ],
   "shared": [],

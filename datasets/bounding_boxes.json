@@ -145,7 +145,12 @@
       "enabled": true,
       "annotationType": "OBJECT_DETECTION",
       "annotationColumn": "labels",
-      "annotationCategories": []
+      "annotationCategories": [
+        "First name",
+        "Last name",
+        "Date of birth",
+        "Profile picture"
+      ]
     }
   }
 }

@@ -31,7 +31,28 @@
       ]
     }
   },
-  "classes": [],
+  "classes": [
+    {
+      "secret": false,
+      "key": "First name",
+      "value": ""
+    },
+    {
+      "secret": false,
+      "key": "Last name",
+      "value": ""
+    },
+    {
+      "secret": false,
+      "key": "Date of birth",
+      "value": ""
+    },
+    {
+      "secret": false,
+      "key": "Profile picture",
+      "value": ""
+    }
+  ],
   "instructions": "",
   "inputPlaceholder": "Label...",
   "allowEmptyLabels": true,

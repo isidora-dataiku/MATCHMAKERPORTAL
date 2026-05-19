@@ -6,7 +6,8 @@
       "RECIPE:compute_job_postings_enriched_prepared_embedded",
       "WEB_APP:WS2Jgob",
       "WEB_APP:ft1bF8V",
-      "RECIPE:compute_ground_truth_answered"
+      "RECIPE:compute_ground_truth_answered",
+      "RECIPE:compute_uploads_extracted_fields"
     ],
     "AGENT": [
       "WEB_APP:WS2Jgob",

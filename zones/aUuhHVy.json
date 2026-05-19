@@ -7,10 +7,6 @@
       "objectType": "MANAGED_FOLDER"
     },
     {
-      "objectId": "compute_uploads_extracted_fields",
-      "objectType": "RECIPE"
-    },
-    {
       "objectId": "compute_uploads_files",
       "objectType": "RECIPE"
     }

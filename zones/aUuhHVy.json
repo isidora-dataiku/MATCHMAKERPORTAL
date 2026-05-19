@@ -13,10 +13,6 @@
     {
       "objectId": "compute_uploads_files",
       "objectType": "RECIPE"
-    },
-    {
-      "objectId": "uploads_files",
-      "objectType": "DATASET"
     }
   ],
   "shared": [],

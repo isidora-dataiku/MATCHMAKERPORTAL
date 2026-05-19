@@ -24,11 +24,7 @@
   },
   "outputs": {
     "main": {
-      "items": [
-        {
-          "ref": "bounding_boxes"
-        }
-      ]
+      "items": []
     }
   },
   "classes": [

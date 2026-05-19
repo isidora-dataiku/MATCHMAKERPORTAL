@@ -23,10 +23,6 @@
       "objectType": "DATASET"
     },
     {
-      "objectId": "bounding_boxes",
-      "objectType": "DATASET"
-    },
-    {
       "objectId": "TpVE3bYohn",
       "objectType": "LABELING_TASK"
     }

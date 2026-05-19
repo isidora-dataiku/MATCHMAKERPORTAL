@@ -5,6 +5,14 @@
     {
       "objectId": "Pn6vLJqs",
       "objectType": "MANAGED_FOLDER"
+    },
+    {
+      "objectId": "compute_uploads_extracted_fields",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "uploads_extracted_fields",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],

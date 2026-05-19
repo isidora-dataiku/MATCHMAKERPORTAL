@@ -3,6 +3,7 @@
   "owner": "isidora.stojanac@dataiku.com",
   "name": "label_uploads_files",
   "type": "OBJECT_DETECTION",
+  "idColumn": "path",
   "labelColumnName": "labels",
   "extraColumns": [],
   "inputs": {

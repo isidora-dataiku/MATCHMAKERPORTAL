@@ -43,8 +43,14 @@
     "view": "VERIFIED_ONLY"
   },
   "schema": {
-    "columns": [],
-    "userModified": false
+    "columns": [
+      {"name":"labeling_task_id","type":"string"},
+      {"name":"path","type":"string"},
+      {"name":"annotation_date","type":"bigint"},
+      {"name":"reviewer","type":"string"},
+      {"name":"labels","type":"string"}
+    ],
+    "userModified": true
   },
   "typeSystemVersion": "V2",
   "dkuProperties": [],
@@ -134,6 +140,7 @@
     "enabled": true,
     "defaultViewOnExplore": true,
     "managedFolderSmartId": "Pn6vLJqs",
+    "pathColumn": "path",
     "annotationParams": {
       "enabled": true,
       "annotationType": "OBJECT_DETECTION",

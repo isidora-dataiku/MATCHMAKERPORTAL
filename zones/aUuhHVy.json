@@ -11,10 +11,6 @@
       "objectType": "RECIPE"
     },
     {
-      "objectId": "uploads_extracted_fields",
-      "objectType": "DATASET"
-    },
-    {
       "objectId": "compute_uploads_files",
       "objectType": "RECIPE"
     },

@@ -99,7 +99,10 @@
       {"name":"extraction_status","type":"string","maxLength":30},
       {"name":"dku_content_id","type":"string","maxLength":45},
       {"name":"extracted_fields","type":"string"},
-      {"name":"invalid_fields","type":"string"}
+      {"name":"invalid_fields","type":"string"},
+      {"name":"Naam","type":"string"},
+      {"name":"Voornamen","type":"string"},
+      {"name":"Geboortedatum","type":"string"}
     ],
     "userModified": true
   },

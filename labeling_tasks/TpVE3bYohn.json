@@ -1,0 +1,58 @@
+{
+  "objectDetectionIOUConflictThreshold": 0.7,
+  "owner": "isidora.stojanac@dataiku.com",
+  "name": "label_uploads_files",
+  "type": "OBJECT_DETECTION",
+  "labelColumnName": "labels",
+  "extraColumns": [],
+  "inputs": {
+    "metadata": {
+      "items": [
+        {
+          "ref": "uploads_files"
+        }
+      ]
+    },
+    "data": {
+      "items": [
+        {
+          "ref": "Pn6vLJqs"
+        }
+      ]
+    }
+  },
+  "outputs": {
+    "main": {
+      "items": [
+        {
+          "ref": "bounding_boxes"
+        }
+      ]
+    }
+  },
+  "classes": [],
+  "instructions": "",
+  "inputPlaceholder": "Label...",
+  "allowEmptyLabels": true,
+  "minNbAnnotatorsPerRecord": 1,
+  "autoValidateAnswers": false,
+  "permissions": [],
+  "commentSettings": {
+    "enabled": false,
+    "columnName": "comment",
+    "placeholder": "Comments...",
+    "autoValidateStrategy": "CONCATENATE_IF_DIFFERENT"
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "isidora.stojanac@dataiku.com"
+    },
+    "lastModifiedOn": 1779177182332
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}

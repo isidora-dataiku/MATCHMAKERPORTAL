@@ -38,11 +38,13 @@
   },
   "tags": [],
   "params": {
+    "labelingTaskId": "TpVE3bYohn",
+    "labelingTaskType": "OBJECT_DETECTION",
     "view": "VERIFIED_ONLY"
   },
   "schema": {
     "columns": [],
-    "userModified": true
+    "userModified": false
   },
   "typeSystemVersion": "V2",
   "dkuProperties": [],
@@ -127,5 +129,16 @@
   },
   "customFields": {
     "gdpr_contains_personal_data": "UNSURE"
+  },
+  "imageViewSettings": {
+    "enabled": true,
+    "defaultViewOnExplore": true,
+    "managedFolderSmartId": "Pn6vLJqs",
+    "annotationParams": {
+      "enabled": true,
+      "annotationType": "OBJECT_DETECTION",
+      "annotationColumn": "labels",
+      "annotationCategories": []
+    }
   }
 }

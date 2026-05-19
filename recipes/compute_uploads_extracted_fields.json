@@ -2,9 +2,11 @@
   "type": "extract_fields",
   "neverRecomputeExistingPartitions": false,
   "params": {
+    "vlmId": "openai:OpenAI:gpt-5-mini",
     "useCustomPrompt": false,
     "extractionPrompt": "Extract those fields and tables by respecting the given schema.\nReturn null when you don\u0027t find those fields, don\u0027t make anything up.\n",
-    "extractionSchema": "{\"type\":\"object\",\"properties\":{}}",
+    "extractionSchema": "{\n  \"type\": \"object\",\n  \"properties\": {\n    \"Naam\": {\n      \"type\": \"string\",\n      \"description\": \"Surname on the passport\"\n    },\n    \"Voornamen\": {\n      \"type\": \"string\",\n      \"description\": \"First names on the passport\"\n    },\n    \"Geboortedatum\": {\n      \"type\": \"string\",\n      \"description\": \"Data of birth\"\n    }\n  }\n}",
+    "previewFilePath": "Dutch_passport_specimen_issued_9_March_2014.jpg",
     "updateMethod": "SMART_OVERWRITE",
     "valueErrorHandling": "BLANK_VALUE",
     "expandArrayFields": true
